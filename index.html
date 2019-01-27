@@ -1,38 +1,141 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-	<!--<![endif]-->
+<!doctype html>
+<html>
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>WeakAuras</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-
 		<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Exo+2:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,700,700italic,600,600italic' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/brands.css" integrity="sha384-QT2Z8ljl3UupqMtQNmPyhSPO/d5qbrzWmFxJqmY7tqoTuT2YrQLEqzvVOP2cT5XW" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/fontawesome.css" integrity="sha384-u5J7JghGz0qUrmEsWzBQkfvc8nK3fUT7DCaQzNQ+q4oEXhGSx+P2OqjWsfIRB8QT" crossorigin="anonymous">	
 		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" type="text/css">
 		</head>
-	<body class="singleimg">
-		<!--[if lt IE 7]>
-		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-		<![endif]-->
-		<img class="logo" src="img/Logo.png" alt=""/>
-		<section class="social-container">
-			<ul class="social">
-				<li>
-					<a href="https://twitter.com/WeakAuras"><img src="img/icons/twitter-icon.png" alt="" /></a>
-				</li>
-				<li>
-					<a href="#https://www.youtube.com/channel/UCEuzJlrsz27wUWlWn_HSEeg"><img src="img/icons/youtube-icon.png" alt="" /></a>
-				</li>
-			</ul>
-		</section>
+		<body class="singleimg">
+			<div class="container">
+				<section class="flex-container">		
+					<div class="flex-item">
+						<img class="logo" src="img/Logo.png" alt=""/>
+					</div>
+				</section>
+				<section class="flex-container flex-product-links">
+					<div class="flex-item">
+						<a href="https://github.com/WeakAuras/WeakAuras2" target="_blank" title="GitHub Project">
+							<img src="img/icons/github-icon.png" alt="GitHub Logo" width="60px" height="60px" />
+						</a>
+					</div>
+					<div class="flex-item">
+						<a href="https://mods.curse.com/addons/wow/weakauras-2" target="_blank" title="Addon listing on Curse.com">
+							<img src="img/icons/curse-icon.svg" alt="Curse Logo" width="60px" height="60px" />
+						</a>
+					</div>
+					<div class="flex-item">
+						<a href="https://discord.gg/wa2" target="_blank" title="Discord Server">
+							<img src="img/icons/discord-icon.png" alt="Discord Logo" width="60px" height="60px"/>
+						</a>
+					</div>				
+				</section>
+				<section>
+					<div class="flex-container flex-patreon">
+						<div class="flex-item">
+							<a href="https://www.patreon.com/bePatron?u=3216523&redirect_uri=https%3A%2F%2Fweakauras.wtf%2F&utm_medium=widget">
+								<img src="https://c5.patreon.com/external/logo/become_a_patron_button.png" />
+							</a>
+						</div>
+					</div>
+				</section>			
+				<section>
+					<div class="flex-container flex-companion">WeakAuras Companion</div>
+					<div class="flex-container flex-companion"><small>Requires WeakAuras version >= 2.11.0</small></div>
+					<div class="flex-container flex-companion">
+						<div class="flex-item">
+							<a class="btn btn-outline-light" id="windows" onclick="_gaq.push(['_trackEvent', 'Download', 'windows'])" href="https://github.com/WeakAuras/WeakAuras-Companion/releases/latest">
+                            	<i class="fab fa-windows"></i> Windows
+                        	</a>
+						</div>
+						<div class="flex-item">
+							<a class="btn btn-outline-light" id="macOS" onclick="_gaq.push(['_trackEvent', 'Download', 'macOS'])" href="https://github.com/WeakAuras/WeakAuras-Companion/releases/latest">
+                            	<i class="fab fa-apple"></i> macOS
+                        	</a>	                        
+						</div>
+						<div class="flex-item">
+							<a class="btn btn-outline-light" id="linux" onclick="_gaq.push(['_trackEvent', 'Download', 'linux'])" href="https://github.com/WeakAuras/WeakAuras-Companion/releases/latest">
+                            	<i class="fab fa-linux"></i> Linux
+	                        </a>	                       
+						</div>
+					</div>
+					<div class="flex-container flex-companion" id="latest-version">&nbsp;</div>
+				</section>								
+				<section class="flex-container flex-container-small flex-social-links">					
+					<div class="flex-item">
+						<a href="https://twitter.com/WeakAuras" target="_blank" title="Twitter Page">
+							<i class="fab fa-twitter-square fa-2x"></i>
+						</a>
+					</div>
+					<div class="flex-item">
+						<a href="https://www.youtube.com/channel/UCEuzJlrsz27wUWlWn_HSEeg" target="_blank" title="YouTube Channel">
+							<i class="fab fa-youtube-square fa-2x"></i>
+						</a>
+					</div>
+					<div class="flex-item">
+		     			<a href="https://facebook.com/WeakAuras" target="_blank" title="Facebook Page">
+		     				<i class="fab fa-facebook-square fa-2x"></i>
+		     			</a>
+		    		</div>
+				</section>
+			</div>
 		</body>
-	<footer>Copyright © 2015, <a href="http://weakauras.wtf">WeakAuras.wtf</a></footer>
+	<footer class="flex-container">
+		<div class="flex-item">
+			<a href="https://schwingendesphoenix.org/impressum.html" title="imprint" target="_blank">Imprint</a>
+		</div>	
+	</footer>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-58648744-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-58648744-1', { 'anonymize_ip': true });
+	</script>
+	 <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-58648744-1']);
+        _gaq.push(['_trackPageview']);
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+	<script type="text/javascript" defer="defer">
+        $(document).ready(function () {
+            getLatestReleases();
+        })        
+        function getLatestReleases() {
+            $.getJSON("https://api.github.com/repos/WeakAuras/WeakAuras-Companion/releases/latest").done(function (release) {
+                $("#latest-version").html("Latest Version: " + release.name);
+                for (const asset of release.assets) {
+                    switch (asset.name) {
+                        case (asset.name.match(/weakauras-companion-setup-.*\.exe$/i) || {}).input:
+                            $("#windows").attr("href", asset.browser_download_url);
+                            break;
+                        case (asset.name.match(/weakauras-companion-.*\.dmg$/i) || {}).input:
+                            $("#macOS").attr("href", asset.browser_download_url);
+                            break;
+                        case (asset.name.match(/weakauras-companion_.*\.snap$/i) || {}).input:
+                            $("#linux").attr("href", asset.browser_download_url);
+                            break;
+                    }
+                }
+            })
+        }
+    </script>
 </html>

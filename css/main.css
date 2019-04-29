@@ -54,7 +54,10 @@ body.singleimg {
     width: 400px; 
     margin-left: auto;
     margin-right: auto; 
-    margin-top: 10vh
+    margin-top: 10vh;
+    background-color: #00000094;
+    padding: 50px;
+    border-radius: .25rem;
 }
 
 .flex-container {

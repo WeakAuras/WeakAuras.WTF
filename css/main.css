@@ -80,6 +80,7 @@ body.singleimg {
     order: 0;
     flex: 0 1 auto;
     align-self: auto;    
+    margin-left: 10px;
 }
 
 .flex-product-links {

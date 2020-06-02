@@ -8,7 +8,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/brands.css" integrity="sha384-QT2Z8ljl3UupqMtQNmPyhSPO/d5qbrzWmFxJqmY7tqoTuT2YrQLEqzvVOP2cT5XW" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/fontawesome.css" integrity="sha384-u5J7JghGz0qUrmEsWzBQkfvc8nK3fUT7DCaQzNQ+q4oEXhGSx+P2OqjWsfIRB8QT" crossorigin="anonymous">	
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/fontawesome.css" integrity="sha384-u5J7JghGz0qUrmEsWzBQkfvc8nK3fUT7DCaQzNQ+q4oEXhGSx+P2OqjWsfIRB8QT" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
@@ -16,7 +16,7 @@
 		</head>
 		<body class="singleimg">
 			<div class="container">
-				<section class="flex-container">		
+				<section class="flex-container">
 					<div class="flex-item">
 						<img class="logo" src="img/Logo.png" alt=""/>
 					</div>
@@ -26,9 +26,9 @@
 						<a href="https://github.com/WeakAuras/WeakAuras2" target="_blank" title="GitHub Project">
 							<img src="img/icons/GitHub-Mark-Light.svg" alt="GitHub Logo" width="64px" height="64px" />
 						</a>
-					</div>					
+					</div>
 					<div class="flex-item">
-						<a href="https://mods.curse.com/addons/wow/weakauras-2" target="_blank" title="Addon listing on CurseForge.com">
+						<a href="https://www.curseforge.com/wow/addons/weakauras-2" target="_blank" title="Addon listing on CurseForge.com">
 							<img src="img/icons/CurseForge-Logo.svg" alt="CurseForce Logo" width="64px" height="64px" />
 						</a>
 					</div>
@@ -36,7 +36,7 @@
 						<a href="https://discord.gg/wa2" target="_blank" title="Discord Server">
 							<img src="img/icons/Discord-Logo-White.svg" alt="Discord Logo" width="64px" height="64px"/>
 						</a>
-					</div>				
+					</div>
 				</section>
 				<section>
 					<div class="flex-container flex-patreon">
@@ -46,7 +46,7 @@
 							</a>
 						</div>
 					</div>
-				</section>			
+				</section>
 				<section>
 					<div class="flex-container flex-companion">WeakAuras Companion</div>
 					<div class="flex-container flex-companion"><small>Requires WeakAuras version >= 2.11.0</small></div>
@@ -59,17 +59,17 @@
 						<div class="flex-item">
 							<a class="btn btn-outline-light" id="macOS" onclick="_gaq.push(['_trackEvent', 'Download', 'macOS'])" href="https://github.com/WeakAuras/WeakAuras-Companion/releases/latest">
                             	<i class="fab fa-apple"></i> macOS
-                        	</a>	                        
+                        	</a>
 						</div>
 						<div class="flex-item">
 							<a class="btn btn-outline-light" id="linux" onclick="_gaq.push(['_trackEvent', 'Download', 'linux'])" href="https://github.com/WeakAuras/WeakAuras-Companion/releases/latest">
                             	<i class="fab fa-linux"></i> Linux
-	                        </a>	                       
+	                        </a>
 						</div>
 					</div>
 					<div class="flex-container flex-companion" id="latest-version">&nbsp;</div>
-				</section>								
-				<section class="flex-container flex-container-small flex-social-links">					
+				</section>
+				<section class="flex-container flex-container-small flex-social-links">
 					<div class="flex-item">
 						<a href="https://twitter.com/WeakAuras" target="_blank" title="Twitter Page">
 							<i class="fab fa-twitter-square fa-2x"></i>
@@ -91,7 +91,7 @@
 	<footer class="flex-container">
 		<div class="flex-item">
 			<a href="https://schwingendesphoenix.org/impressum.html" title="imprint" target="_blank">Imprint</a>
-		</div>	
+		</div>
 	</footer>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-58648744-1"></script>
@@ -118,7 +118,7 @@
 	<script type="text/javascript" defer="defer">
         $(document).ready(function () {
             getLatestReleases();
-        })        
+        })
         function getLatestReleases() {
             $.getJSON("https://api.github.com/repos/WeakAuras/WeakAuras-Companion/releases/latest").done(function (release) {
                 $("#latest-version").html("Latest Version: " + release.name);

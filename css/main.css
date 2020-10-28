@@ -83,6 +83,11 @@ body.singleimg {
     margin-left: 10px;
 }
 
+.flex-item img {
+    fill: white;
+    color: white;
+}
+
 .flex-product-links {
     margin-top: 8vh;
 }

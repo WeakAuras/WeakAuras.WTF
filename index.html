@@ -20,36 +20,46 @@
 		<meta name="twitter:description" content="World of Warcraft addon that provides a powerful framework to display customizable graphics on your screen.">
 		<meta name="twitter:image" content="https://repository-images.githubusercontent.com/25056248/a4275280-2284-11eb-923f-74385a33f37f">        
 		<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/brands.css" integrity="sha384-QT2Z8ljl3UupqMtQNmPyhSPO/d5qbrzWmFxJqmY7tqoTuT2YrQLEqzvVOP2cT5XW" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/fontawesome.css" integrity="sha384-u5J7JghGz0qUrmEsWzBQkfvc8nK3fUT7DCaQzNQ+q4oEXhGSx+P2OqjWsfIRB8QT" crossorigin="anonymous">
+		<script src="https://kit.fontawesome.com/11b17f8307.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" type="text/css">
 		</head>
 		<body class="singleimg">
+			<section class="flex-container">
+				<div class="flex-item">
+					<img class="logo" src="img/Logo.png" alt=""/>
+				</div>
+			</section>
 			<div class="container">
-				<section class="flex-container">
+				<section class="flex-container flex-description">
 					<div class="flex-item">
-						<img class="logo" src="img/Logo.png" alt=""/>
+						<h2 class="flex-description">
+							WeakAuras
+						</h2>
+						<div class="flex-container-small">
+							A World of Warcraft addon that provides a powerful framework to display customizable graphics on your screen.
+						</div>
 					</div>
 				</section>
-				<section class="flex-container flex-product-links">
+				<section class="flex-container flex-product-links">			
 					<div class="flex-item">
-						<a href="https://github.com/WeakAuras/WeakAuras2" target="_blank" rel="noopener" title="GitHub Project">
-							<img src="img/icons/GitHub-Mark-Light.svg" alt="GitHub Logo" width="56px" height="56px" />
+						<a class="btn btn-outline-light" id="GitHub" target="_blank" rel="noopener" title="GitHub Project" href="https://github.com/WeakAuras/WeakAuras-Companion">
+							<i class="fab fa-github"></i> GitHub
 						</a>
 					</div>
 					<div class="flex-item">
-						<a href="https://www.curseforge.com/wow/addons/weakauras-2" target="_blank" rel="noopener" title="Addon listing on CurseForge.com">
-							<img src="img/icons/CurseForge-Logo.svg" alt="CurseForce Logo" width="64px" height="64px" />
+						<a class="btn btn-outline-light" id="CurseForge" target="_blank" rel="noopener" title="Addon listing on CurseForge.com" href="https://www.curseforge.com/wow/addons/weakauras-2">
+							<i class="fas fa-folder-download"></i> CurseForge	
+							<!-- Icon did not show during local test but w/e -->
 						</a>
 					</div>
 					<div class="flex-item">
-						<a href="https://discord.gg/weakauras" target="_blank" rel="noopener" title="Discord Server">
-							<img src="img/icons/Discord-Logo-White.svg" alt="Discord Logo" width="64px" height="64px"/>
+						<a class="btn btn-outline-light" id="Discord" target="_blank" rel="noopener" title="Discord Server" href="https://discord.gg/weakauras">
+							<i class="fab fa-discord"></i> Discord
 						</a>
-					</div>
+					</div>				
 				</section>
 				<section>
 					<div class="flex-container flex-patreon">
@@ -60,9 +70,19 @@
 						</div>
 					</div>
 				</section>
+				<hr />
 				<section>
-					<div class="flex-container flex-companion"><a href="https://github.com/WeakAuras/WeakAuras-Companion" title="WeakAuras Companion GitHub" target="_blank" rel="noopener">WeakAuras Companion</a></div>
-					<div class="flex-container flex-companion"><small>Allows you to update your auras from Wago.io and regularly creates backups of them</small></div>
+					<div class="flex-container flex-description">
+						<h2>
+							WeakAuras Companion
+						</h2>
+					</div>
+					<div class="flex-container flex-container-small flex-description">
+						<span>
+							A desktop application that allows you to update your auras from Wago.io and can create regular backups of them.
+						</span>
+					</div>
+					<div class="flex-container flex-companion" id="latest-version">&nbsp;</div>
 					<div class="flex-container flex-companion">
 						<div class="flex-item">
 							<a class="btn btn-outline-light" id="windows" onclick="_gaq.push(['_trackEvent', 'Download', 'windows'])" href="https://github.com/WeakAuras/WeakAuras-Companion/releases/latest">
@@ -80,9 +100,8 @@
 	                        </a>
 						</div>
 					</div>
-					<div class="flex-container flex-companion" id="latest-version">&nbsp;</div>
 				</section>
-				<section class="flex-container flex-container-small flex-social-links">
+				<section class="flex-container flex-social-links">
 					<div class="flex-item">
 						<a href="https://twitter.com/WeakAuras" target="_blank" rel="noopener" title="Twitter Page">
 							<i class="fab fa-twitter-square fa-2x"></i>

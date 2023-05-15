@@ -63,6 +63,7 @@ body.singleimg {
     margin-top: 6vh;
     background-color: #00000094;
     border-radius: 16px;
+    padding: 20px;
 }
 
 .flex-container {

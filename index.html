@@ -1,169 +1,292 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>WeakAuras</title>		
-		<meta name="description" content="WeakAuras - A World of Warcraft addon that provides a powerful framework to display customizable graphics on your screen.">
-		<!-- Facebook Meta Tags -->
-		<meta property="og:url" content="https://weakauras.wtf">
-		<meta property="og:type" content="website">
-		<meta property="og:title" content="World of Warcraft addon that provides a powerful framework to display customizable graphics on your screen.">
-		<meta property="og:description" content="World of Warcraft addon that provides a powerful framework to display customizable graphics on your screen.">
-		<meta property="og:image" content="https://repository-images.githubusercontent.com/25056248/a4275280-2284-11eb-923f-74385a33f37f">
-		<!-- Twitter Meta Tags -->
-		<meta name="twitter:card" content="summary_large_image">
-		<meta property="twitter:domain" content="https://weakauras.wtf">
-		<meta property="twitter:url" content="https://weakauras.wtf">
-		<meta name="twitter:title" content="World of Warcraft addon that provides a powerful framework to display customizable graphics on your screen.">
-		<meta name="twitter:description" content="World of Warcraft addon that provides a powerful framework to display customizable graphics on your screen.">
-		<meta name="twitter:image" content="https://repository-images.githubusercontent.com/25056248/a4275280-2284-11eb-923f-74385a33f37f">        
-		<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
-		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<script src="https://kit.fontawesome.com/11b17f8307.js" crossorigin="anonymous"></script>
-		<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" type="text/css">		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=G-6XVJFTDZPE"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WeakAuras</title>
+    <meta
+      name="description"
+      content="WeakAuras - A World of Warcraft addon that provides a powerful framework to display customizable graphics on your screen."
+    />
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://weakauras.wtf" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="World of Warcraft addon that provides a powerful framework to display customizable graphics on your screen."
+    />
+    <meta
+      property="og:description"
+      content="World of Warcraft addon that provides a powerful framework to display customizable graphics on your screen."
+    />
+    <meta
+      property="og:image"
+      content="https://repository-images.githubusercontent.com/25056248/a4275280-2284-11eb-923f-74385a33f37f"
+    />
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="https://weakauras.wtf" />
+    <meta property="twitter:url" content="https://weakauras.wtf" />
+    <meta
+      name="twitter:title"
+      content="World of Warcraft addon that provides a powerful framework to display customizable graphics on your screen."
+    />
+    <meta
+      name="twitter:description"
+      content="World of Warcraft addon that provides a powerful framework to display customizable graphics on your screen."
+    />
+    <meta
+      name="twitter:image"
+      content="https://repository-images.githubusercontent.com/25056248/a4275280-2284-11eb-923f-74385a33f37f"
+    />
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/11b17f8307.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      type="text/css"
+    />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6XVJFTDZPE"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-			gtag('config', 'G-6XVJFTDZPE',  { 'anonymize_ip': true });
-		</script>
-	</head>	
-	<body class="singleimg">
-		<section class="flex-container">
-			<div class="flex-item">
-				<img class="logo" src="img/Logo.png" alt=""/>
-			</div>
-		</section>
-		<div class="container">
-			<section class="flex-container flex-description">
-				<div class="flex-item">
-					<h2 class="flex-description">
-						WeakAuras
-					</h2>
-					<div class="flex-container-small">
-						A World of Warcraft addon that provides a powerful framework to display customizable graphics on your screen.
-					</div>
-				</div>
-			</section>
-			<section class="flex-container flex-product-links">	
-				<div class="flex-item">
-					<a class="btn btn-outline-light" id="GitHub" target="_blank" rel="noopener" title="GitHub Project" href="https://github.com/WeakAuras/WeakAuras2">
-						<i class="fab fa-github"></i> GitHub
-					</a>
-				</div>
-				<div class="flex-item">
-					<a class="btn btn-outline-light" id="CurseForge" target="_blank" rel="noopener" title="Addon listing on CurseForge.com" href="https://www.curseforge.com/wow/addons/weakauras-2">
-						<i class="fas fa-download"></i> CurseForge	
-					</a>
-				</div>
-				<div class="flex-item">
-					<a class="btn btn-outline-light" id="Discord" target="_blank" rel="noopener" title="Discord Server" href="https://discord.gg/weakauras">
-						<i class="fab fa-discord"></i> Discord
-					</a>
-				</div>				
-			</section>
-			<section>
-				<div class="flex-container flex-patreon">
-					<div class="flex-item">
-						<a href="https://www.patreon.com/bePatron?u=3216523&redirect_uri=https%3A%2F%2Fweakauras.wtf%2F&utm_medium=widget" target="_blank" rel="noopener" title="Patreon Page">
-							<img src="https://c5.patreon.com/external/logo/become_a_patron_button.png" alt="Support us on Patreon"/>
-						</a>
-					</div>
-					<div class="flex-item">
-<iframe src="https://github.com/sponsors/WeakAuras/button" title="Sponsor WeakAuras" height="32" width="114" style="border: 0; border-radius: 6px;"></iframe>					</div>
-				</div>
-				
-			</section>
-			<hr />
-			<section>
-				<div class="flex-container flex-description">
-					<h2>
-						WeakAuras Companion
-					</h2>
-				</div>
-				<div class="flex-container flex-container-small flex-description">
-					<span>
-						A desktop application that allows you to update your auras from Wago.io and can create regular backups of them.
-					</span>
-				</div>
-				<div class="flex-container flex-companion" id="latest-version">&nbsp;</div>
-				<div class="flex-container flex-companion">
-					<div class="flex-item">
-						<a class="btn btn-outline-light" id="windows" onclick="_gaq.push(['_trackEvent', 'Download', 'windows'])" href="https://github.com/WeakAuras/WeakAuras-Companion/releases/latest">
-							<i class="fab fa-windows"></i> Windows
-						</a>
-					</div>
-					<div class="flex-item">
-						<a class="btn btn-outline-light" id="macOS" onclick="_gaq.push(['_trackEvent', 'Download', 'macOS'])" href="https://github.com/WeakAuras/WeakAuras-Companion/releases/latest">
-							<i class="fab fa-apple"></i> macOS
-						</a>
-					</div>
-					<div class="flex-item">
-						<a class="btn btn-outline-light" id="linux" onclick="_gaq.push(['_trackEvent', 'Download', 'linux'])" href="https://github.com/WeakAuras/WeakAuras-Companion/releases/latest">
-							<i class="fab fa-linux"></i> Linux
-						</a>
-					</div>
-				</div>
-			</section>				
-		</div>
-	</body>
-	<footer class="flex-container">
-		<section class="flex-container flex-social-links">
-			<div class="flex-item">
-				<a href="https://twitter.com/WeakAuras" target="_blank" rel="noopener" title="Twitter Page">
-					<i class="fab fa-twitter-square fa-2x"></i>
-				</a>
-			</div>
-			<div class="flex-item">
-				<a href="https://hachyderm.io/@WeakAuras" target="_blank" rel="me noopener" title="Mastodon Page">
-					<i class="fab fa-mastodon fa-2x"></i>
-				</a>
-			</div>
-			<div class="flex-item">
-				<a href="https://www.youtube.com/channel/UCEuzJlrsz27wUWlWn_HSEeg" target="_blank" rel="noopener" title="YouTube Channel">
-					<i class="fab fa-youtube-square fa-2x"></i>
-				</a>
-			</div>
-			<div class="flex-item">
-				<a href="https://facebook.com/WeakAuras" target="_blank" rel="noopener" title="Facebook Page">
-					<i class="fab fa-facebook-square fa-2x"></i>
-				</a>
-			</div>
-			<div class="flex-item flex-imprint">
-				<a href="https://schwingendesphoenix.org/impressum.html" target="_blank" rel="noopener" title="Imprint">
-					<i class="fas fa-info-circle fa-2x"></i>
-				</a>
-			</div>
-		</section>
-	</footer>
-	<script type="text/javascript" defer="defer">
-        $(document).ready(function () {
-            getLatestReleases();
-        })
-        function getLatestReleases() {
-            $.getJSON("https://api.github.com/repos/WeakAuras/WeakAuras-Companion/releases/latest").done(function (release) {
-                $("#latest-version").html("Latest Version: " + release.name);
-                for (const asset of release.assets) {
-                    switch (asset.name) {
-                        case (asset.name.match(/weakauras-companion-setup-.*\.exe$/i) || {}).input:
-                            $("#windows").attr("href", asset.browser_download_url);
-                            break;
-                        case (asset.name.match(/weakauras-companion-.*\.dmg$/i) || {}).input:
-                            $("#macOS").attr("href", asset.browser_download_url);
-                            break;
-                        case (asset.name.match(/weakauras-companion_.*\.snap$/i) || {}).input:
-                            $("#linux").attr("href", asset.browser_download_url);
-                            break;
-                    }
-                }
-            })
-        }
+      gtag("config", "G-6XVJFTDZPE", { anonymize_ip: true });
     </script>
+  </head>
+
+  <body class="singleimg">
+    <section class="flex-container">
+      <div class="flex-item">
+        <img class="logo" src="img/Logo.png" alt="" />
+      </div>
+    </section>
+    <div class="container">
+      <section class="flex-container flex-description">
+        <div class="flex-item">
+          <h2 class="flex-description">WeakAuras</h2>
+          <div class="flex-container-small">
+            A World of Warcraft addon that provides a powerful framework to
+            display customizable graphics on your screen.
+          </div>
+        </div>
+      </section>
+      <section class="flex-container flex-product-links">
+        <div class="flex-item">
+          <a
+            class="btn btn-outline-light"
+            id="GitHub"
+            target="_blank"
+            rel="noopener"
+            title="GitHub Project"
+            href="https://github.com/WeakAuras/WeakAuras2"
+          >
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+        <div class="flex-item">
+          <a
+            class="btn btn-outline-light"
+            id="CurseForge"
+            target="_blank"
+            rel="noopener"
+            title="Addon listing on CurseForge.com"
+            href="https://www.curseforge.com/wow/addons/weakauras-2"
+          >
+            <i class="fas fa-download"></i> CurseForge
+          </a>
+        </div>
+        <div class="flex-item">
+          <a
+            class="btn btn-outline-light"
+            id="Discord"
+            target="_blank"
+            rel="noopener"
+            title="Discord Server"
+            href="https://discord.gg/weakauras"
+          >
+            <i class="fab fa-discord"></i> Discord
+          </a>
+        </div>
+      </section>
+      <section>
+        <div class="flex-container flex-patreon">
+          <div class="flex-item">
+            <a
+              href="https://www.patreon.com/bePatron?u=3216523&redirect_uri=https%3A%2F%2Fweakauras.wtf%2F&utm_medium=widget"
+              target="_blank"
+              rel="noopener"
+              title="Patreon Page"
+            >
+              <img
+                src="https://c5.patreon.com/external/logo/become_a_patron_button.png"
+                alt="Support us on Patreon"
+              />
+            </a>
+          </div>
+          <div class="flex-item">
+            <iframe
+              src="https://github.com/sponsors/WeakAuras/button"
+              title="Sponsor WeakAuras"
+              height="32"
+              width="114"
+              style="border: 0; border-radius: 6px"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section>
+        <div class="flex-container flex-description">
+          <h2>WeakAuras Companion</h2>
+        </div>
+        <div class="flex-container flex-container-small flex-description">
+          <span>
+            A desktop application that allows you to update your auras from
+            Wago.io and can create regular backups of them.
+          </span>
+        </div>
+        <div class="flex-container flex-companion" id="latest-version">
+          &nbsp;
+        </div>
+        <div class="flex-container flex-companion">
+          <div class="flex-item">
+            <a
+              class="btn btn-outline-light"
+              id="windows"
+              onclick="_gaq.push(['_trackEvent', 'Download', 'windows'])"
+              href="https://github.com/WeakAuras/WeakAuras-Companion/releases/latest"
+            >
+              <i class="fab fa-windows"></i> Windows
+            </a>
+          </div>
+          <div class="flex-item">
+            <a
+              class="btn btn-outline-light"
+              id="macOS"
+              onclick="_gaq.push(['_trackEvent', 'Download', 'macOS'])"
+              href="https://github.com/WeakAuras/WeakAuras-Companion/releases/latest"
+            >
+              <i class="fab fa-apple"></i> macOS
+            </a>
+          </div>
+          <div class="flex-item">
+            <a
+              class="btn btn-outline-light"
+              id="linux"
+              onclick="_gaq.push(['_trackEvent', 'Download', 'linux'])"
+              href="https://github.com/WeakAuras/WeakAuras-Companion/releases/latest"
+            >
+              <i class="fab fa-linux"></i> Linux
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+  <footer class="flex-container">
+    <section class="flex-container flex-social-links">
+      <div class="flex-item">
+        <a
+          href="https://twitter.com/WeakAuras"
+          target="_blank"
+          rel="noopener"
+          title="Twitter Page"
+        >
+          <i class="fab fa-twitter-square fa-2x"></i>
+        </a>
+      </div>
+      <div class="flex-item">
+        <a
+          href="https://hachyderm.io/@WeakAuras"
+          target="_blank"
+          rel="me noopener"
+          title="Mastodon Page"
+        >
+          <i class="fab fa-mastodon fa-2x"></i>
+        </a>
+      </div>
+      <div class="flex-item">
+        <a
+          href="https://www.youtube.com/channel/UCEuzJlrsz27wUWlWn_HSEeg"
+          target="_blank"
+          rel="noopener"
+          title="YouTube Channel"
+        >
+          <i class="fab fa-youtube-square fa-2x"></i>
+        </a>
+      </div>
+      <div class="flex-item">
+        <a
+          href="https://facebook.com/WeakAuras"
+          target="_blank"
+          rel="noopener"
+          title="Facebook Page"
+        >
+          <i class="fab fa-facebook-square fa-2x"></i>
+        </a>
+      </div>
+      <div class="flex-item flex-imprint">
+        <a
+          href="https://schwingendesphoenix.org/impressum.html"
+          target="_blank"
+          rel="noopener"
+          title="Imprint"
+        >
+          <i class="fas fa-info-circle fa-2x"></i>
+        </a>
+      </div>
+    </section>
+  </footer>
+  <script type="text/javascript" defer="defer">
+    $(document).ready(function () {
+      getLatestReleases();
+    });
+    function getLatestReleases() {
+      $.getJSON(
+        "https://api.github.com/repos/WeakAuras/WeakAuras-Companion/releases/latest"
+      ).done(function (release) {
+        $("#latest-version").html("Latest Version: " + release.name);
+        for (const asset of release.assets) {
+          switch (asset.name) {
+            case (asset.name.match(/weakauras-companion-setup-.*\.exe$/i) || {})
+              .input:
+              $("#windows").attr("href", asset.browser_download_url);
+              break;
+            case (asset.name.match(/weakauras-companion-.*\.dmg$/i) || {})
+              .input:
+              $("#macOS").attr("href", asset.browser_download_url);
+              break;
+            case (asset.name.match(/weakauras-companion_.*\.snap$/i) || {})
+              .input:
+              $("#linux").attr("href", asset.browser_download_url);
+              break;
+          }
+        }
+      });
+    }
+  </script>
 </html>
